@@ -9,4 +9,6 @@ const reverseStr = str => {
     return invertedArray.join('');
 }
 
-
+console.log(reverseStr('Helloworld'));
+console.log(reverseStr('Hello World'));
+console.log(reverseStr());
