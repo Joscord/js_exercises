@@ -1,23 +1,15 @@
-// regex for whitespace
 const regex = /\s+/g
 
-// Inverted string function
 const invertedStr = str => {
-        // string to array 
         const strArray = str.split('');
-        // reverse the array
         const invertedArray = strArray.reverse();
-        // Array to string/ 
         return invertedArray.join('');
 }
 
-// palindromeChecker
 const palindromeChecker = str => {
     if (typeof str !== 'string') return 'Please enter a valid string'
     const invertedString = invertedStr(str).toLowerCase();
     const normalString = str.toLowerCase();
-    console.log(invertedString);
-    console.log(normalString);
     if (normalString.replace(regex, '') === invertedString.replace(regex, '')) return "It's a Palindrome"
     else return "It's not a Palindrome"
 };
