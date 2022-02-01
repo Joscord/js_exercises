@@ -16,3 +16,7 @@ const palindromeChecker = str => {
     else "It's not a Palindrome"
 };
 
+console.log(palindromeChecker('ana'));
+console.log(palindromeChecker('Ana'));
+console.log(palindromeChecker('Banana'));
+console.log(palindromeChecker());
