@@ -11,8 +11,8 @@ const invertedStr = str => {
 // palindromeChecker
 const palindromeChecker = str => {
     if (typeof str !== 'string') return 'Please enter a valid string'
-    invertedString = invertedStr(str.toLowerCase());
-    if (str === invertedStr) return "It's a Palindrome"
+    const invertedString = invertedStr(str.toLowerCase());
+    if (str === invertedString) return "It's a Palindrome"
     else "It's not a Palindrome"
 };
 
